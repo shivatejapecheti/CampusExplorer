@@ -34,3 +34,7 @@ Explore the Gallery to view captivating images and videos of events like PRAVIDI
 
 ## How to Contribute
 If you'd like to contribute to the development of this website, feel free to fork the repository and submit pull requests. Your contributions are highly appreciated.
+
+## Disclaimer
+
+All images, videos, and other multimedia content used on this web page are for educational and illustrative purposes only. They belong to their respective owners and are used here solely for the purpose of this assignment. No copyright infringement is intended.

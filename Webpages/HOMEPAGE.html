@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Tangerine|Anton|Libre+Baskerville|Lobster" rel="stylesheet">
+  <title>Amrita School of Engineering</title>
+  <style>
+    /* Your inline styles here if needed */
+    body {
+      background-image: url(https://unsplsh.com/photos/knH05eGDEwc);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: rgba(78, 3, 3, 0.982);
+    }
+    .header {
+      background-color: rgba(97, 11, 27, 0.896); /* Adding a semi-transparent background */
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .quote-circle-container {
+      display: flex;
+      align-items: center;
+    }
+    .quote-container {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+    .quote-icon {
+      width: 50px; /* Adjust icon size */
+      height: 50px; /* Adjust icon size */
+      background-color: #400000; /* Adding background color */
+      border-radius: 50%; /* Circular shape */
+      margin: 0 auto 10px; /* Center icon */
+    }
+    .quote-text {
+      font-style: italic;
+    }
+    .circle-image-container {
+      flex: 1;
+      text-align: center;
+    }
+    .circle-image {
+      display: inline-block;
+      width: 80px; /* Adjust image size */
+      height: 80px; /* Adjust image size */
+      background-color: #DE3163; /* Adding background color */
+      border-radius: 50%; /* Circular shape */
+      overflow: hidden;
+      margin-bottom: 10px; /* Spacing */
+    }
+    .circle-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .description {
+      flex: 1;
+      padding: 10px;
+      text-align: justify; /* Justify the text */
+      background-color: rgba(0, 0, 255, 0.6); /* Semi-transparent blue background */
+      border-radius: 5px; /* Adding rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adding a subtle shadow */
+      color: #FFFFFF; /* White text color */
+    }
+    .description h2 {
+      margin-bottom: 20px;
+    }
+    .description p {
+      text-align: justify;
+    }
+    .video-container {
+      text-align: center;
+    }
+    .video-container iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="ASEB Logo">
+    </div>
+    <div class="header-content">
+      <h1 class="green-text">AMRITA SCHOOL OF ENGINEERING</h1>
+      <p class="location">BENGALURU</p>
+    </div>
+  </header>
+  
+  <nav class="navbar" id="myNavbar">
+    <a href="index.html">Home</a>
+    <a href="academics.html">Academics</a>
+    <a href="admission.html">Admission</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">&#9776;</a>
+  </nav>
+  
+  <div class="container">
+    <div class="circle-image-container">
+      <div class="circle-image">
+        <img src="circle-image.png" alt="Circle Image">
+      </div>
+    </div>
+    <div class="description">
+      <h2>Welcome to Amrita School of Engineering</h2>
+      <p>Amrita Vishwa Vidyapeetham is a deemed-to-be private university and eminence college located in Coimbatore, Tamil Nadu, India. The multi-campus, multi-disciplinary university currently has six campuses spanning Tamil Nadu, Kerala and Karnataka, with 15 constituent schools in it. It offers a total of 207 programs in engineering, medicine, business, arts & sciences, biotechnology, mass communication and social work, including undergraduate, postgraduate, integrated, dual degree, doctoral and certification programmes. The university was established in 1994 by Mata Amritanandamayi Devi with the opening of Amrita School of Engineering, Coimbatore, and is run by her international humanitarian organization Mata Amritanandamayi Math. In 2003, when the UGC granted this status, it became one of the youngest institutes to be deemed a university.</p>
+    </div>
+  </div>
+  
+      
+
+  <script>
+    function toggleNavbar() {
+      var navbar = document.getElementById("myNavbar");
+      if (navbar.className === "navbar") {
+        navbar.className += " responsive";
+      } else {
+        navbar.className = "navbar";
+      }
+    }
+  </script>
+</body>
+</html>

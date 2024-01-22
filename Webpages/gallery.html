@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Tangerine|Anton|Libre+Baskerville|Lobster" rel="stylesheet">
+  <title>Gallery</title>
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffcfd; /* Set your desired background color */
+      color: #000000;
+    }
+
+    /* Gallery styles */
+    .gallery {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .gallery h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .image-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(237, 235, 235, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .image-card img {
+      width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    .image-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .icon {
+      display: none;
+    }
+
+    /* Media query for responsive navigation */
+    @media screen and (max-width: 600px) {
+      .navbar a:not(:first-child) {
+        display: none;
+      }
+      .navbar a.icon {
+        float: right;
+        display: block;
+      }
+      .navbar.responsive {
+        position: relative;
+      }
+      .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: justify;
+      }
+      .header {
+        background-color: rgba(10, 151, 198, 0.088);
+        padding: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        position: absolute;
+        max-width: 100px;
+      }
+
+      .header-content {
+        margin-left: 20px;
+      }
+
+      .green-text {
+        padding-left: 10%;
+        color: #0a97c6;
+      }
+
+      .location {
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="ASEB Logo">
+    </div>
+    <div class="header-content">
+      <h1 class="green-text">AMRITA SCHOOL OF ENGINEERING</h1>
+      <p class="location">BENGALURU</p>
+    </div>
+  </header>
+
+  <nav class="navbar" id="myNavbar">
+    <a href="index.html">Home</a>
+    <a href="academics.html">Academics</a>
+    <a href="admission.html">Admission</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">&#9776;</a>
+  </nav>
+  
+  <div class="gallery">
+    <h2>GALLERY</h2>
+
+    <div class="image-grid">
+      <!-- Add your gallery images here -->
+      <div class="image-card">
+        <img src="pic_1.jpg" alt="College Image 1">
+      </div>
+      <div class="image-card">
+        <img src="pic_2.jpg" alt="College Image 2">
+      </div>
+      <div class="image-card">
+        <img src="pic_3.jpg" alt="College Image 3">
+      </div>
+      <div class="image-card">
+        <img src="pic_4.jpg"alt="College Image 4">
+      </div>
+      <div class="image-card">
+        <img src="pic_5.png"alt="College Image 4">
+      </div>
+      <div class="image-card">
+        <img src="pic_6.jpg"alt="College Image 4">
+      </div>
+      <!-- Add more images as needed -->
+    </div>
+    
+    <hr>
+    <h1>CULTURLAL EVENTS</h1>
+    <div class="image-card">
+      <video controls autoplay width="100%">
+        <source src="placeholder_videoo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <script>
+    function toggleNavbar() {
+      var navbar = document.getElementById("myNavbar");
+      if (navbar.className === "navbar") {
+        navbar.className += " responsive";
+      } else {
+        navbar.className = "navbar";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Tangerine|Anton|Libre+Baskerville|Lobster" rel="stylesheet">
+  <title>Gallery - Amrita School of Engineering</title>
+  <style>
+
+    .gallery-title {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .gallery-section {
+      padding: 40px 0;
+      background-color: rgba(255, 255, 255, 0.9); /* Adding a semi-transparent white background */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adding a subtle shadow */
+    }
+    .gallery-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .image-card {
+      flex-basis: calc(25% - 10px);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .image-card img {
+      width: 100%;
+      height: auto;
+    }
+    .image-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="ASEB Logo">
+    </div>
+    <div class="header-content">
+      <h1 class="green-text">AMRITA SCHOOL OF ENGINEERING</h1>
+      <p class="location">BENGALURU</p>
+    </div>
+  </header>
+  
+  <nav class="navbar" id="myNavbar">
+    <a href="index.html">Home</a>
+    <a href="academics.html">Academics</a>
+    <a href="admission.html">Admission</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">&#9776;</a>
+  </nav>
+  
+  <div class="container">
+    <div class="gallery-title">
+      <h1>Gallery</h1>
+    </div>
+  
+    <!-- PRAVIDI Section -->
+    <div class="gallery-section">
+      <h2>PRAVIDI</h2>
+      <div class="image-container">
+        <div class="image-card">
+          <img src="pravidi_1.jpg" alt="PRAVIDI Image 1">
+        </div>
+        <div class="image-card">
+          <img src="pravidi_2.jpg" alt="PRAVIDI Image 2">
+        </div>
+        <div class="image-card">
+          <img src="pravidi_3.jpg" alt="PRAVIDI Image 3">
+        </div>
+        <div class="image-card">
+          <img src="pravidi_4.jpg" alt="PRAVIDI Image 4">
+        </div>
+      </div>
+    </div>
+  
+    <!-- MAD EVENING Section -->
+    <div class="gallery-section">
+      <h2>MAD EVENING</h2>
+      <div class="image-container">
+        <div class="image-card">
+          <img src="mad_evening_1.jpg" alt="MAD EVENING Image 1">
+        </div>
+        <div class="image-card">
+          <img src="mad_evening_2.jpg" alt="MAD EVENING Image 2">
+        </div>
+        <div class="image-card">
+          <img src="mad_evening_3.jpg" alt="MAD EVENING Image 3">
+        </div>
+        <div class="image-card">
+          <img src="mad_evening_4.jpg" alt="MAD EVENING Image 4">
+        </div>
+      </div>
+    </div>
+  
+    <!-- CAMPUS Section -->
+    <div class="gallery-section">
+      <h2>CAMPUS</h2>
+      <div class="image-container">
+        <div class="image-card">
+          <img src="campus_1.jpg" alt="CAMPUS Image 1">
+        </div>
+        <div class="image-card">
+          <img src="campus_2.jpg" alt="CAMPUS Image 2">
+        </div>
+        <div class="image-card">
+          <img src="campus_3.jpg" alt="CAMPUS Image 3">
+        </div>
+        <div class="image-card">
+          <img src="campus_4.jpg" alt="CAMPUS Image 4">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function toggleNavbar() {
+      var navbar = document.getElementById("myNavbar");
+      if (navbar.className === "navbar") {
+        navbar.className += " responsive";
+      } else {
+        navbar.className = "navbar";
+      }
+    }
+  </script>
+</body>
+</html>

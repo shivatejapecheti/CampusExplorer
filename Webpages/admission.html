@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Tangerine|Anton|Libre+Baskerville|Lobster" rel="stylesheet">
+  <title>Amrita School of Engineering</title>
+  <style>
+    /* ... (previous styles) ... */
+
+    /* Container for the image and description */
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Text description box */
+    .description-box,
+    .admission-box {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+    }
+
+    .description-box h1,
+    .admission-box h2 {
+      color: #DE3163;
+      margin-bottom: 10px;
+    }
+
+    .description-box p,
+    .admission-box p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .admission-box .btn {
+      background-color: #DE3163;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .admission-box .btn:hover {
+      background-color: #C71585;
+    }
+
+    /* Admission form styling */
+    .admission-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .admission-form input[type="text"],
+    .admission-form input[type="email"],
+    .admission-form input[type="tel"],
+    .admission-form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .admission-form input[type="submit"] {
+      background-color: #DE3163;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: px;
+    }
+
+    .admission-form input[type="submit"]:hover {
+      background-color: #C71585;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="ASEB Logo">
+    </div>
+    <div class="header-content">
+      <h1 class="green-text">AMRITA SCHOOL OF ENGINEERING</h1>
+      <p class="location">BENGALURU</p>
+    </div>
+  </header>
+
+  <nav class="navbar" id="myNavbar">
+    <a href="index.html">Home</a>
+    <a href="academics.html">Academics</a>
+    <a href="admission.html">Admission</a>
+    <a href="gallery.html">Gallery</a>
+    <!-- <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">&#9776;</a> -->
+  </nav>
+      
+  <div class="academics-section">
+    <div class="content-container">
+      <div class="description-box">
+        <h1>Admissions</h1>
+        <p>
+            Amrita Vishwa Vidyapeetham is a deemed-to-be university, ranked 5th in the country by NIRF. Admission to B. Tech programs  offered at Amrita School of Engineering – Amritapuri, Bengaluru, Chennai, Coimbatore, Amaravati is based on the rank secured in Amrita Entrance Examination Engineering 2023 or JEE Mains 2023 .
+        </p>
+      </div>
+
+      <div class="admission-box">
+        <h2>Submit Your Application</h2>
+        <form class="admission-form" action="submit_application.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+          
+          <label for="course">Select Course:</label>
+          <select id="course" name="course">
+            <option value="btech_cse">B. Tech. in Computer Science and Engineering</option>
+            <option value="btech_ece">B. Tech. in Electronics and Computer Engineering</option>
+            <option value="btech_aie">B. Tech. in Computer Science and Engineering (Artificial Intelligence)</option>
+            <option value="btech_robo">B. Tech. Robotics & Artificial Intelligence (RAI)</option>
+          </select>
+          
+          <input type="submit" value="Apply Now" class="btn">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleNavbar() {
+      var navbar = document.getElementById("myNavbar");
+      if (navbar.className === "navbar") {
+        navbar.className += " responsive";
+      } else {
+        navbar.className = "navbar";
+      }
+    }
+  </script>
+</body>
+</html>

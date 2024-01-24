@@ -10,6 +10,10 @@ This project was developed as part of my coursework in HTML, CSS, and JavaScript
 
 Feel free to explore the codebase and provide any feedback or suggestions.
 
+![Homepage](https://github.com/shivatejapecheti/CampusExplorer/assets/126412107/8442faa0-51f7-40c9-a22d-2e63d9666030)
+
+![gallery](https://github.com/shivatejapecheti/CampusExplorer/assets/126412107/da7c0eec-cdd7-40f6-96c8-afae57b41ec3)
+
 
  <div align="justify"> Welcome to the website repository of Amrita School of Engineering.  This website introduces Amrita School of Engineering with a clean design. The website provides information about academics, admission, and features a gallery showcasing various events. The content highlights the university's history, programs, and campuses, complemented by quotes and images for an engaging user experience.  This repository contains the HTML, CSS, and image files for the college website. </div>
 

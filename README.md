@@ -1,6 +1,4 @@
-# CampusExplorer
-
-## Course Assessment
+# Course Assessment
 
 This project was developed as part of my coursework in HTML, CSS, and JavaScript. It serves as an assessment project to showcase the practical application of the skills and knowledge gained during the course. The website is designed for Amrita School of Engineering, covering various sections such as Home, Academics, Admission, and Gallery.
 
